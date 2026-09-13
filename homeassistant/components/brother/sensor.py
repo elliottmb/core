@@ -81,14 +81,12 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="drum_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.drum_remaining_life,
     ),
     BrotherSensorEntityDescription(
         key="drum_remaining_pages",
         translation_key="drum_remaining_pages",
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.drum_remaining_pages,
     ),
     BrotherSensorEntityDescription(
@@ -103,14 +101,12 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="black_drum_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.black_drum_remaining_life,
     ),
     BrotherSensorEntityDescription(
         key="black_drum_remaining_pages",
         translation_key="black_drum_remaining_pages",
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.black_drum_remaining_pages,
     ),
     BrotherSensorEntityDescription(
@@ -125,14 +121,12 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="cyan_drum_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.cyan_drum_remaining_life,
     ),
     BrotherSensorEntityDescription(
         key="cyan_drum_remaining_pages",
         translation_key="cyan_drum_remaining_pages",
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.cyan_drum_remaining_pages,
     ),
     BrotherSensorEntityDescription(
@@ -147,14 +141,12 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="magenta_drum_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.magenta_drum_remaining_life,
     ),
     BrotherSensorEntityDescription(
         key="magenta_drum_remaining_pages",
         translation_key="magenta_drum_remaining_pages",
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.magenta_drum_remaining_pages,
     ),
     BrotherSensorEntityDescription(
@@ -169,14 +161,12 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="yellow_drum_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.yellow_drum_remaining_life,
     ),
     BrotherSensorEntityDescription(
         key="yellow_drum_remaining_pages",
         translation_key="yellow_drum_remaining_pages",
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.yellow_drum_remaining_pages,
     ),
     BrotherSensorEntityDescription(
@@ -191,7 +181,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="belt_unit_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.belt_unit_remaining_life,
     ),
     BrotherSensorEntityDescription(
@@ -199,7 +188,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="fuser_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.fuser_remaining_life,
     ),
     BrotherSensorEntityDescription(
@@ -207,7 +195,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="laser_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.laser_remaining_life,
     ),
     BrotherSensorEntityDescription(
@@ -215,7 +202,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="pf_kit_1_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.pf_kit_1_remaining_life,
     ),
     BrotherSensorEntityDescription(
@@ -223,7 +209,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="pf_kit_mp_remaining_life",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.pf_kit_mp_remaining_life,
     ),
     BrotherSensorEntityDescription(
@@ -231,7 +216,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="black_toner_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.black_toner_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -239,7 +223,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="cyan_toner_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.cyan_toner_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -247,7 +230,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="magenta_toner_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.magenta_toner_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -255,7 +237,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="yellow_toner_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.yellow_toner_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -263,7 +244,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="black_ink_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.black_ink_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -271,7 +251,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="cyan_ink_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.cyan_ink_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -279,7 +258,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="magenta_ink_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.magenta_ink_remaining,
     ),
     BrotherSensorEntityDescription(
@@ -287,7 +265,6 @@ SENSOR_TYPES: tuple[BrotherSensorEntityDescription, ...] = (
         translation_key="yellow_ink_remaining",
         native_unit_of_measurement=PERCENTAGE,
         state_class=SensorStateClass.MEASUREMENT,
-        entity_category=EntityCategory.DIAGNOSTIC,
         value=lambda data: data.yellow_ink_remaining,
     ),
     BrotherSensorEntityDescription(
